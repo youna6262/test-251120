@@ -1,24 +1,41 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
 
 document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+  <div class="container">
+    <div class="profile">
+      <div class="profile-image">
+        <div class="avatar">👤</div>
+      </div>
+      <h1 class="name">이유나나</h1>
+      <p class="title">웹 개발자</p>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
+    
+    <div class="content">
+      <section class="section">
+        <h2>안녕하세요! 👋</h2>
+        <p>
+          열정적인 웹 개발자입니다. 사용자 경험을 중시하며 
+          깔끔하고 효율적인 코드를 작성하는 것을 좋아합니다.
+        </p>
+      </section>
+      
+      <section class="section">
+        <h2>기술 스택</h2>
+        <div class="skills">
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">Vite</span>
+        </div>
+      </section>
+      
+      <section class="section">
+        <h2>연락처</h2>
+        <div class="contact">
+          <p>📧 email@example.com</p>
+          <p>🔗 github.com/username</p>
+        </div>
+      </section>
+    </div>
   </div>
 `
-
-setupCounter(document.querySelector('#counter'))
